@@ -8,6 +8,7 @@ Follow the steps to Run the Project:
 
 Prerequisite:
 Place file ‘multicast.py’ in /home/mininet/pox/pox/openflow/
+
 Place file ‘igmpv3.py’ in /home/mininet/pox/pox/lib/packet/
 
 Steps:
@@ -20,11 +21,13 @@ Steps:
 	
 	On Clients :   route add –host <Multicast_address> <server_host>-Ethernet
 	(First)	      iperf –s –B <Multicast_address> -u –f m –i 5
+		      
 		      e.g. route add –host 224.10.10.10 h9-eth0
 		             iperf –s –B 224.10.10.10 –u –f m –i 5
 
 	On Server :    route add –host <Multicast_address> <server_host>-Ethernet
 	(Next)	      iperf –c <Multicast_address> -u –b 0.5m –f m –i 5 –t 60
+		      
 		      e.g. route add –host 224.10.10.10 h1-eth0
 		              iperf –c 224.10.10.10 –u –b 0.5m –f m –i 5 –t 60
 
