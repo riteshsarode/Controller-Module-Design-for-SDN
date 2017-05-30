@@ -1,0 +1,621 @@
+{
+    "application": {
+        "dpctl": "",
+        "ipBase": "10.0.0.0/8",
+        "netflow": {
+            "nflowAddId": "0",
+            "nflowTarget": "",
+            "nflowTimeout": "600"
+        },
+        "openFlowVersions": {
+            "ovsOf10": "1",
+            "ovsOf11": "0",
+            "ovsOf12": "0",
+            "ovsOf13": "0"
+        },
+        "sflow": {
+            "sflowHeader": "128",
+            "sflowPolling": "30",
+            "sflowSampling": "400",
+            "sflowTarget": ""
+        },
+        "startCLI": "1",
+        "switchType": "ovs",
+        "terminalType": "xterm"
+    },
+    "controllers": [
+        {
+            "opts": {
+                "controllerProtocol": "tcp",
+                "controllerType": "remote",
+                "hostname": "c0",
+                "remoteIP": "127.0.0.1",
+                "remotePort": 6633
+            },
+            "x": "507.0",
+            "y": "326.0"
+        }
+    ],
+    "hosts": [
+        {
+            "number": "17",
+            "opts": {
+                "hostname": "h17",
+                "nodeNum": 17,
+                "sched": "host"
+            },
+            "x": "53.0",
+            "y": "384.0"
+        },
+        {
+            "number": "8",
+            "opts": {
+                "hostname": "h8",
+                "nodeNum": 8,
+                "sched": "host"
+            },
+            "x": "1018.0",
+            "y": "270.0"
+        },
+        {
+            "number": "15",
+            "opts": {
+                "hostname": "h15",
+                "nodeNum": 15,
+                "sched": "host"
+            },
+            "x": "210.0",
+            "y": "583.0"
+        },
+        {
+            "number": "11",
+            "opts": {
+                "hostname": "h11",
+                "nodeNum": 11,
+                "sched": "host"
+            },
+            "x": "760.0",
+            "y": "588.0"
+        },
+        {
+            "number": "12",
+            "opts": {
+                "hostname": "h12",
+                "nodeNum": 12,
+                "sched": "host"
+            },
+            "x": "630.0",
+            "y": "466.0"
+        },
+        {
+            "number": "6",
+            "opts": {
+                "hostname": "h6",
+                "nodeNum": 6,
+                "sched": "host"
+            },
+            "x": "715.0",
+            "y": "72.0"
+        },
+        {
+            "number": "16",
+            "opts": {
+                "hostname": "h16",
+                "nodeNum": 16,
+                "sched": "host"
+            },
+            "x": "300.0",
+            "y": "585.0"
+        },
+        {
+            "number": "7",
+            "opts": {
+                "hostname": "h7",
+                "nodeNum": 7,
+                "sched": "host"
+            },
+            "x": "823.0",
+            "y": "71.0"
+        },
+        {
+            "number": "3",
+            "opts": {
+                "hostname": "h3",
+                "nodeNum": 3,
+                "sched": "host"
+            },
+            "x": "509.0",
+            "y": "71.0"
+        },
+        {
+            "number": "9",
+            "opts": {
+                "hostname": "h9",
+                "nodeNum": 9,
+                "sched": "host"
+            },
+            "x": "1021.0",
+            "y": "340.0"
+        },
+        {
+            "number": "13",
+            "opts": {
+                "hostname": "h13",
+                "nodeNum": 13,
+                "sched": "host"
+            },
+            "x": "457.0",
+            "y": "591.0"
+        },
+        {
+            "number": "14",
+            "opts": {
+                "hostname": "h14",
+                "nodeNum": 14,
+                "sched": "host"
+            },
+            "x": "546.0",
+            "y": "589.0"
+        },
+        {
+            "number": "1",
+            "opts": {
+                "hostname": "h1",
+                "nodeNum": 1,
+                "sched": "host"
+            },
+            "x": "51.0",
+            "y": "266.0"
+        },
+        {
+            "number": "2",
+            "opts": {
+                "hostname": "h2",
+                "nodeNum": 2,
+                "sched": "host"
+            },
+            "x": "251.0",
+            "y": "71.0"
+        },
+        {
+            "number": "4",
+            "opts": {
+                "hostname": "h4",
+                "nodeNum": 4,
+                "sched": "host"
+            },
+            "x": "386.0",
+            "y": "197.0"
+        },
+        {
+            "number": "10",
+            "opts": {
+                "hostname": "h10",
+                "nodeNum": 10,
+                "sched": "host"
+            },
+            "x": "1022.0",
+            "y": "408.0"
+        },
+        {
+            "number": "5",
+            "opts": {
+                "hostname": "h5",
+                "nodeNum": 5,
+                "sched": "host"
+            },
+            "x": "626.0",
+            "y": "196.0"
+        }
+    ],
+    "links": [
+        {
+            "dest": "s1",
+            "opts": {},
+            "src": "h1"
+        },
+        {
+            "dest": "s2",
+            "opts": {},
+            "src": "h2"
+        },
+        {
+            "dest": "s3",
+            "opts": {},
+            "src": "h3"
+        },
+        {
+            "dest": "s6",
+            "opts": {},
+            "src": "h6"
+        },
+        {
+            "dest": "h7",
+            "opts": {},
+            "src": "s6"
+        },
+        {
+            "dest": "h8",
+            "opts": {},
+            "src": "s8"
+        },
+        {
+            "dest": "h9",
+            "opts": {},
+            "src": "s8"
+        },
+        {
+            "dest": "h10",
+            "opts": {},
+            "src": "s8"
+        },
+        {
+            "dest": "h11",
+            "opts": {},
+            "src": "s10"
+        },
+        {
+            "dest": "h5",
+            "opts": {},
+            "src": "s5"
+        },
+        {
+            "dest": "h12",
+            "opts": {},
+            "src": "s11"
+        },
+        {
+            "dest": "h13",
+            "opts": {},
+            "src": "s13"
+        },
+        {
+            "dest": "h14",
+            "opts": {},
+            "src": "s13"
+        },
+        {
+            "dest": "h4",
+            "opts": {},
+            "src": "s4"
+        },
+        {
+            "dest": "h15",
+            "opts": {},
+            "src": "s14"
+        },
+        {
+            "dest": "h16",
+            "opts": {},
+            "src": "s14"
+        },
+        {
+            "dest": "h17",
+            "opts": {},
+            "src": "s15"
+        },
+        {
+            "dest": "s2",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "s3",
+            "opts": {},
+            "src": "s2"
+        },
+        {
+            "dest": "s15",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "s14",
+            "opts": {},
+            "src": "s15"
+        },
+        {
+            "dest": "s5",
+            "opts": {},
+            "src": "s4"
+        },
+        {
+            "dest": "s12",
+            "opts": {},
+            "src": "s1"
+        },
+        {
+            "dest": "s4",
+            "opts": {},
+            "src": "s15"
+        },
+        {
+            "dest": "s12",
+            "opts": {},
+            "src": "s14"
+        },
+        {
+            "dest": "s13",
+            "opts": {},
+            "src": "s14"
+        },
+        {
+            "dest": "s11",
+            "opts": {},
+            "src": "s13"
+        },
+        {
+            "dest": "s9",
+            "opts": {},
+            "src": "s5"
+        },
+        {
+            "dest": "s8",
+            "opts": {},
+            "src": "s11"
+        },
+        {
+            "dest": "s7",
+            "opts": {},
+            "src": "s11"
+        },
+        {
+            "dest": "s6",
+            "opts": {},
+            "src": "s3"
+        },
+        {
+            "dest": "s7",
+            "opts": {},
+            "src": "s6"
+        },
+        {
+            "dest": "s6",
+            "opts": {},
+            "src": "s5"
+        },
+        {
+            "dest": "s8",
+            "opts": {},
+            "src": "s7"
+        },
+        {
+            "dest": "s9",
+            "opts": {},
+            "src": "s8"
+        },
+        {
+            "dest": "s10",
+            "opts": {},
+            "src": "s13"
+        },
+        {
+            "dest": "s10",
+            "opts": {},
+            "src": "s11"
+        },
+        {
+            "dest": "s9",
+            "opts": {},
+            "src": "s10"
+        },
+        {
+            "dest": "s4",
+            "opts": {},
+            "src": "s2"
+        },
+        {
+            "dest": "s11",
+            "opts": {},
+            "src": "s14"
+        },
+        {
+            "dest": "s11",
+            "opts": {},
+            "src": "s5"
+        },
+        {
+            "dest": "s13",
+            "opts": {},
+            "src": "s12"
+        }
+    ],
+    "switches": [
+        {
+            "number": "9",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s9",
+                "nodeNum": 9,
+                "switchType": "default"
+            },
+            "x": "893.0",
+            "y": "448.0"
+        },
+        {
+            "number": "5",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s5",
+                "nodeNum": 5,
+                "switchType": "default"
+            },
+            "x": "627.0",
+            "y": "275.0"
+        },
+        {
+            "number": "11",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s11",
+                "nodeNum": 11,
+                "switchType": "default"
+            },
+            "x": "627.0",
+            "y": "389.0"
+        },
+        {
+            "number": "2",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s2",
+                "nodeNum": 2,
+                "switchType": "default"
+            },
+            "x": "251.0",
+            "y": "154.0"
+        },
+        {
+            "number": "15",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s15",
+                "nodeNum": 15,
+                "switchType": "default"
+            },
+            "x": "145.0",
+            "y": "385.0"
+        },
+        {
+            "number": "6",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s6",
+                "nodeNum": 6,
+                "switchType": "default"
+            },
+            "x": "760.0",
+            "y": "153.0"
+        },
+        {
+            "number": "13",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s13",
+                "nodeNum": 13,
+                "switchType": "default"
+            },
+            "x": "504.0",
+            "y": "499.0"
+        },
+        {
+            "number": "4",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s4",
+                "nodeNum": 4,
+                "switchType": "default"
+            },
+            "x": "385.0",
+            "y": "275.0"
+        },
+        {
+            "number": "12",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s12",
+                "nodeNum": 12,
+                "switchType": "default"
+            },
+            "x": "386.0",
+            "y": "388.0"
+        },
+        {
+            "number": "3",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s3",
+                "nodeNum": 3,
+                "switchType": "default"
+            },
+            "x": "505.0",
+            "y": "154.0"
+        },
+        {
+            "number": "10",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s10",
+                "nodeNum": 10,
+                "switchType": "default"
+            },
+            "x": "759.0",
+            "y": "498.0"
+        },
+        {
+            "number": "14",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s14",
+                "nodeNum": 14,
+                "switchType": "default"
+            },
+            "x": "255.0",
+            "y": "499.0"
+        },
+        {
+            "number": "7",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s7",
+                "nodeNum": 7,
+                "switchType": "default"
+            },
+            "x": "894.0",
+            "y": "239.0"
+        },
+        {
+            "number": "1",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s1",
+                "nodeNum": 1,
+                "switchType": "default"
+            },
+            "x": "146.0",
+            "y": "267.0"
+        },
+        {
+            "number": "8",
+            "opts": {
+                "controllers": [
+                    "c0"
+                ],
+                "hostname": "s8",
+                "nodeNum": 8,
+                "switchType": "default"
+            },
+            "x": "894.0",
+            "y": "340.0"
+        }
+    ],
+    "version": "2"
+}
