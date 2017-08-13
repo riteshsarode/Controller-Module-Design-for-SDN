@@ -1,23 +1,25 @@
 # Controller-Module-Design-for-SDN
-Designed an IGMP handler to allow client multicast proposals to be deployed in a live OpenFlow SDN network. Confirmed multicast operation using VLC server and dynamic recalculation of Dijkstra’s least cost path
+
+This is an implementation of IGMP handler module to allow dynamic client multicast proposals to be deployed in a OpenFlow SDN network.
 
 Requirements: 
-Mininet Machine up and running over Virtual platform with POX installation
+Mininet Machine up and running over Virtual platform with POX Controller installation
 
-Follow the steps to Run the Project:
+Follow the steps to Run the Demo for Multicast streaming in a SDN Network:
 
 Prerequisite:
-Place file ‘multicast.py’ in /home/mininet/pox/pox/openflow/
+1. Place file ‘multicast.py’ in /home/mininet/pox/pox/openflow/
 
-Place file ‘igmpv3.py’ in /home/mininet/pox/pox/lib/packet/
+2. Place file ‘igmpv3.py’ in /home/mininet/pox/pox/lib/packet/
 
 Steps:
-1. Run the MiniEdit network
+1. Run MiniEdit. Make your own SDN Network or use the final_network.mn file. 
 
 2. Run the POX controller using command :
 	sudo ~/pox/pox.py samples.pretty_log openflow.discovery openflow.multicast forwarding.l3_learning 	log.level  --WARNING –openflow.multicast=DEBUG
 
 3. Run the clients first and then the server
+	Choose your Server and Clients. Use the following commands to run them
 	
 	On Clients :   route add –host <Multicast_address> <server_host>-Ethernet
 	(First)	      iperf –s –B <Multicast_address> -u –f m –i 5
