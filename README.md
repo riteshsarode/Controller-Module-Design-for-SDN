@@ -19,6 +19,7 @@ Steps:
 	sudo ~/pox/pox.py samples.pretty_log openflow.discovery openflow.multicast forwarding.l3_learning 	log.level  --WARNING –openflow.multicast=DEBUG
 
 3. Run the clients first and then the server
+	
 	Choose your Server and Clients. Use the following commands to run them
 	
 	On Clients :   route add –host <Multicast_address> <server_host>-Ethernet
